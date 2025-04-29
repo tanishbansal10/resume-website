@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tanish Bansal | Resume</title>
   <style>
     body {
@@ -20,15 +20,32 @@
       border-bottom: 2px solid #ccc;
       max-width: 700px;
       margin: 0 auto;
+      display: flex;
+      align-items: center;
     }
 
-    .banner .name {
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 30px;
+      flex-shrink: 0;
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .name {
       font-size: 60px;
       font-weight: bold;
       margin: 0;
     }
 
-    .banner .title {
+    .title {
       font-size: 27px;
       color: #555;
       margin-top: 5px;
@@ -114,9 +131,15 @@
 </head>
 <body>
   <div class="banner">
-    <div class="name">Tanish Bansal</div>
-    <div class="title">College Student</div>
+    <div class="profile-pic">
+      <img src="tanish.jpeg" alt="Tanish Bansal">
+    </div>
+    <div>
+      <div class="name">Tanish Bansal</div>
+      <div class="title">College Student</div>
+    </div>
   </div>
+
   <div class="container">
     <div class="vertical-line"></div>
     <span class="marker marker1">1</span>
